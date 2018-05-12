@@ -44,6 +44,7 @@ module.exports = function (environment) {
 
     ENV['jux'] = {
       APP_ID: 'ember-test',
+      BRANCH_ID: 'xj7',
       CAPTURE_INSTANCE_URL: 'http://localhost:3001',
     }
   }
