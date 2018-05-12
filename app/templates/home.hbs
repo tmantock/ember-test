@@ -1,24 +1,27 @@
 <div class='pictures'>
   <div class='carousel content-container'>
-    {{project-carousel images=images}}
-    {{!-- <div class='overlay'></div>
+    {{project-carousel images=images}} {{!--
+    <div class='overlay'></div>
     {{#liquid-bind image use='toLeft'}}
-      <img src={{image}} />
-    {{/liquid-bind}} --}}
+    <img src={{image}} /> {{/liquid-bind}} --}}
   </div>
   <div class='see-me title-container content-container'>
     <h1>See Me</h1>
   </div>
 </div>
 <div class='about'>
-    <div class='about-me title-container content-container'>
-      <h1>About Me</h1>
-    </div>
-    <div class='details content-container'>
-      <div class='paragraph'>
-        <h3>An Awesome Software Engineer Near You!</h3>
-        <p> I am a Software Engineer, who knows Web and Systems technologies. I have a passion and appreciation for simplistic and intuitive design. I am based in Southern California, however I am open to relocating within the United States. </p>
-        <p> I'm currently attending Oregon State University for Computer Science. While I'm attending Oregon State, I like to spend my free time making new projects, learning new things, or working at my internship (mostly this),</p>
+  <div class='about-me title-container content-container'>
+    <h1>About Me</h1>
+  </div>
+  <div class='details content-container'>
+    <div class='paragraph'>
+      {{!--
+      <h3>An Awesome Software Engineer Near You!</h3> --}}
+      <p> I am a Software Engineer, who knows Web and Systems technologies. I have a passion and appreciation for simplistic
+        and intuitive design. I am based in Southern California, however I am open to relocating within the United States.
+        </p>
+      <p> I'm currently attending Oregon State University for Computer Science. While I'm attending Oregon State, I like to spend
+        my free time making new projects, learning new things, or working at my internship (mostly this),</p>
     </div>
   </div>
 </div>
