@@ -1,0 +1,32 @@
+<div class='projects'>
+  <div class='scroll-list'>
+    {{#each projects as |project|}}
+      <div class='card' {{action 'selectProject' project}}>
+        <div class='card-block'>
+          <h6 class='card-title'>{{project.name}}</h6>
+          <p class='card-text'>
+            {{project.subHeader}}
+          </p>
+
+          {{#each project.languages as |language|}}
+            <span class='badge badge-primary'>
+              {{language.name}}
+            </span>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class='detail-view' id='explode-project'>
+    {{#liquid-bind selectedProject as |project|}}
+      <div class='title'>
+        <h1>{{project.name}}</h1>
+        <h4>{{project.subHeader}}</h4>
+      </div>
+      <div class='body'>
+        {{format-body project.body}}
+      </div>
+    {{/liquid-bind}}
+  </div>
+</div>
+{{outlet}}
