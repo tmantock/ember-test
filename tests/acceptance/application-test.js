@@ -18,8 +18,8 @@ module('Acceptance | application', function (hooks) {
 
   test('visiting home', async function (assert) {
     await visit('/home');
-    apture('visiting home page');
-     assert.equal(currentURL(), '/home');
+    capture('visiting home page');
+    assert.equal(currentURL(), '/home');
   });
 
   test('visiting projects', async assert => {
