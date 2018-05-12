@@ -17,9 +17,9 @@ module('Acceptance | application', function (hooks) {
   setupApplicationTest(hooks);
 
   test('visiting home', async function (assert) {
-    await visit('/home');
+    await visit('/');
     capture('visiting home page');
-    assert.equal(currentURL(), '/home');
+    assert.equal(currentURL(), '/');
   });
 
   test('visiting projects', async assert => {
