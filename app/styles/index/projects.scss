@@ -1,0 +1,63 @@
+.projects {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .scroll-list {
+    flex: 1;
+    height: 100%;
+    width: 300px;
+    overflow-y: auto;
+
+    .card {
+      border: 2px solid #eee;
+      border-radius: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 8px;
+
+      h6 {
+        font-weight: 600;
+      }
+
+      .badge-primary {
+        $blue-color: #0ed4c8;
+        color: $blue-color;
+        border: 2px solid $blue-color;
+        border-radius: 5px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .detail-view {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    height: 100%;
+
+    .title,
+    .body {
+      width: 100%;
+    }
+
+    .title {
+      background: #4ECDC4;
+      background: -webkit-linear-gradient(to right, #556270, #4ECDC4);
+      background: linear-gradient(to right, #556270, #4ECDC4);
+      color: #fff;
+      display: flex;
+      height: 30%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .body {
+      background: none repeat scroll 0 0 rgba(0,0,0,0.04);
+      color: #000;
+      height: 70%;
+      padding: 24px;
+    }
+  }
+}
