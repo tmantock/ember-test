@@ -16,11 +16,11 @@ import {
 module('Acceptance | application', function (hooks) {
   setupApplicationTest(hooks);
 
-  // test('visiting home', async function (assert) {
-  //   await visit('/home');
-  //   capture('visiting home page');
-  //   assert.equal(currentURL(), '/home');
-  // });
+  test('visiting home', async function (assert) {
+    await visit('/home');
+    apture('visiting home page');
+     assert.equal(currentURL(), '/home');
+  });
 
   test('visiting projects', async assert => {
     await visit('/projects')
